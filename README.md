@@ -11,14 +11,29 @@ en un solo archivo y sin dependencias externas.
 
 - 🎯 **Entrada flexible:** combina libremente Vértice, Foco y Directriz mediante checkboxes.
 - ⚡ **Auto-graficado:** la parábola se recalcula y dibuja automáticamente al escribir cualquier valor.
+- 🖱️ **Manipulación directa:** arrastra el vértice, el foco o la directriz **desde la gráfica**.
 - ✅ **Validación inteligente:** verifica la consistencia geométrica entre los elementos capturados.
 - 📝 **Ecuación en dos formas:** estándar y general, generadas al instante.
 - 📌 **Panel de elementos:** muestra vértice, foco, directriz, eje de simetría, |p|, lado recto y orientación.
 - 🎨 **Canvas interactivo:** cuadrícula adaptativa, ejes etiquetados, colores diferenciados y etiquetas flotantes.
+- 📱 **Soporte táctil:** funciona con ratón, touchpad y pantallas táctiles.
 - 🌐 **Interfaz completamente en español.**
 
 ---
+## 🆕 Novedades v2.1.0
 
+- 🖱️ **Arrastre interactivo en el canvas:** ahora puedes mover el **vértice**,
+  el **foco** y la **directriz** directamente con el ratón o el dedo.
+- 🎯 **Detección automática:** el cursor cambia a `grab` al pasar sobre un
+  elemento arrastrable y a `grabbing` durante el arrastre.
+- 🔗 **Alineación inteligente:** al arrastrar V o F, se mantiene automáticamente
+  la alineación vertical u horizontal entre ambos (evita inconsistencias).
+- 🔄 **Sincronización automática:** al mover V o F, la directriz se recalcula;
+  al mover la directriz, el foco se ajusta si V+F están activos.
+- 📱 **Soporte táctil:** funciona también en tablets y móviles.
+- 🧩 **Módulo 100% aditivo:** no se modificó la lógica existente del simulador.
+
+---
 ## 🆕 Novedades v2.0.0
 
 - 🔄 **Campos siempre visibles:** Vértice, Foco y Directriz se muestran permanentemente.
@@ -50,16 +65,37 @@ en un solo archivo y sin dependencias externas.
 
 ## 🎮 Controles del simulador
 
-| Elemento | Campos | Descripción |
-|---|---|---|
-| 📍 Vértice | `h`, `k` | Coordenadas del vértice de la parábola |
-| ⭐ Foco | `fx`, `fy` | Coordenadas del foco |
-| 📏 Directriz | Tipo (`y = c` o `x = c`) + valor `c` | Recta directriz |
+## 🖱️ Arrastrar elementos (interacción con el canvas)
 
-**Reglas:**
-- Se requieren **al menos 2 elementos activos** para construir la parábola.
-- Con **3 elementos**, se valida la consistencia geométrica.
-- Los cambios se reflejan **en tiempo real** sin necesidad de presionar botones.
+Además de escribir los valores en los campos, puedes **arrastrar los
+elementos directamente sobre la gráfica**:
+
+| Elemento | Acción | Comportamiento |
+|---|---|---|
+| 📍 **Vértice** | Arrastra el punto azul | Se mueve en tiempo real; si el foco está activo, se mantiene alineado |
+| ⭐ **Foco** | Arrastra el punto rosa | Se mueve en tiempo real; si el vértice está activo, se mantiene alineado |
+| 📏 **Directriz** | Arrastra la línea verde | Se desliza sobre su eje; si V+F están activos, el foco se reajusta |
+
+### 🎨 Feedback visual
+
+- **Cursor `grab`** 👆 al pasar sobre un elemento arrastrable.
+- **Cursor `grabbing`** ✊ mientras se arrastra.
+- Los valores de los campos se actualizan automáticamente al soltar.
+
+### 🔒 Reglas de coherencia
+
+- Con **V y F activos**, el arrastre de cualquiera de ellos se restringe
+  al **eje de alineación** detectado al iniciar el arrastre.
+- Al mover **V o F**, la directriz se recalcula automáticamente si está activa.
+- Al mover la **directriz**, si V y F están activos, el foco se ajusta para
+  mantener la relación `FV = distancia(V, directriz)`.
+- Si el cursor sale del canvas durante el arrastre, se cancela limpiamente.
+
+### 📱 Compatibilidad táctil
+
+El arrastre funciona también con **un solo dedo** en dispositivos táctiles,
+sin interferir con el desplazamiento de la página cuando no hay un elemento
+seleccionado.
 
 ---
 
