@@ -175,5 +175,5 @@ a partir del vértice y el foco coincida con la capturada. En caso contrario:
 
 ## 🔗 Proyectos relacionados
 
-- [⚡ Simulador de Tiro Parabólico](https://github.com/tu-usuario/tiro-parabolico) —
+- [⚡ Simulador de Tiro Parabólico](https://jcteacher-lab.github.io/tiro-parabolico) —
   Simulador educativo de movimiento de proyectiles con Canvas 2D.
