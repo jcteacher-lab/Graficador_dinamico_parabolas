@@ -4,6 +4,7 @@ Simulador educativo que construye la **gráfica y la ecuación de una parábola*
 a partir de sus elementos geométricos: **Vértice**, **Foco** y **Directriz**.
 Desarrollado en **HTML + CSS + JavaScript** puro con **Canvas 2D**, autocontenido
 en un solo archivo y sin dependencias externas.
+https://jcteacher-lab.github.io/Graficador_dinamico_parabolas/
 
 ---
 
