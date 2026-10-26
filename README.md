@@ -218,7 +218,7 @@ Graficador_dinamico_parabolas/
 ├── README.md    # este archivo
 ├── LICENSE      # texto legal GNU GPL v3
 └── index.html   # el simulador
----
+```
 
 ## 12. Detalles técnicos
 
