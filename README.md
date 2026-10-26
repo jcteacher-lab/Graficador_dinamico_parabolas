@@ -211,11 +211,13 @@ Puedes probar estos casos directamente en el simulador:
 
 ## 11. Estructura del repositorio
 
-```
+El código está contenido en un solo archivo:
+
+```text
 Graficador_dinamico_parabolas/
-├── README.md                          ← este archivo
-├── LICENSE                            ← texto legal GNU GPL v3
-├── index.html                         ← el simulador
+├── README.md    # este archivo
+├── LICENSE      # texto legal GNU GPL v3
+└── index.html   # el simulador
 ---
 
 ## 12. Detalles técnicos
@@ -243,8 +245,6 @@ a partir del vértice y el foco coincida con la capturada. En caso contrario:
 - Se muestra un **aviso amarillo**.
 - Se prioriza el par **Vértice + Foco**.
 
----
-
 ## 13. Proyectos relacionados
 
 - [Simulador de Tiro Parabólico](https://jcteacher-lab.github.io/tiroparabolico) —
@@ -259,7 +259,5 @@ Simulador interactivo del Sistema Solar en un único archivo HTML. Renderiza pla
 **MTI. Juan Carlos Santiago Sánchez**
 - GitHub: [@jcteacher-lab](https://github.com/jcteacher-lab)
 - Correo: juancarlos.santiago.cb161@dgeti.sems.gob.mx
-
----
 
  Si este proyecto te resultó útil, considera darle una estrella en GitHub.
