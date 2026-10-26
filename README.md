@@ -4,11 +4,29 @@ Simulador educativo que construye la **gráfica y la ecuación de una parábola*
 a partir de sus elementos geométricos: **Vértice**, **Foco** y **Directriz**.
 Desarrollado en **HTML + CSS + JavaScript** puro con **Canvas 2D**, autocontenido
 en un solo archivo y sin dependencias externas.
+
 https://jcteacher-lab.github.io/Graficador_dinamico_parabolas/
 
 ---
+## Índice
 
-## Características
+1. [Características](#1-características)
+2. [Novedades v2.1.0](#2-novedades-v2.1.0)
+3. [Novedades v2.0.0](#3-novedades-v2.0.0)
+4. [Instalación y ejecución](#4-instalación-y-ejecución)
+5. [Cómo usar](#5-cómo-usar)
+6. [Controles del simulador](#6-controles-del-simulador)
+7. [Salidas en pantalla](#7-salidas-en-pantalla)
+8. [Uso didáctico](#8-uso-didáctico)
+9. [Ejemplos incluidos](#9-ejemplos-incluidos)
+10. [Tecnologías](#10-tecnologías)
+11. [Estructura del repositorio](#11-estructura-del-repositorio)
+12. [Detalles técnicos](#12-detalles-técnicos)
+13. [Proyectos relacionados](#13-proyectos-relacionados)
+14. [Autor](#14-autor)
+
+---
+## 1. Características
 
 -  **Entrada flexible:** combina libremente Vértice, Foco y Directriz mediante checkboxes.
 -  **Auto-graficado:** la parábola se recalcula y dibuja automáticamente al escribir cualquier valor.
@@ -21,7 +39,7 @@ https://jcteacher-lab.github.io/Graficador_dinamico_parabolas/
 -  **Interfaz completamente en español.**
 
 ---
-##  Novedades v2.1.0
+## 2. Novedades v2.1.0
 
 -  **Arrastre interactivo en el canvas:** ahora puedes mover el **vértice**,
   el **foco** y la **directriz** directamente con el ratón o el dedo.
@@ -35,7 +53,7 @@ https://jcteacher-lab.github.io/Graficador_dinamico_parabolas/
 -  **Módulo 100% aditivo:** no se modificó la lógica existente del simulador.
 
 ---
-##  Novedades v2.0.0
+## 3. Novedades v2.0.0
 
 -  **Campos siempre visibles:** Vértice, Foco y Directriz se muestran permanentemente.
   Cada uno se **activa/desactiva con un checkbox**.
@@ -51,7 +69,19 @@ https://jcteacher-lab.github.io/Graficador_dinamico_parabolas/
 
 ---
 
-##  Cómo usar
+## 4. Instalación y ejecución
+
+No requiere instalación. Basta con descargar el archivo y abrirlo en un navegador:
+
+```bash
+git clone https://github.com/jcteacher-lab/Graficador_dinamico_parabolas.git
+cd Graficador_dinamico_parabolas
+python3 -m http.server 8000
+# Abre en tu navegador:
+http://localhost:8000
+```
+
+## 5. Cómo usar
 
 1. Descarga el archivo `index.html`.
 2. Ábrelo con cualquier navegador moderno (Chrome, Firefox, Edge, Safari).
@@ -64,7 +94,7 @@ https://jcteacher-lab.github.io/Graficador_dinamico_parabolas/
 
 ---
 
-## Controles del simulador
+## 6. Controles del simulador
 
 ## Arrastrar elementos (interacción con el canvas)
 
@@ -100,7 +130,7 @@ seleccionado.
 
 ---
 
-## Salidas en pantalla
+## 7. Salidas en pantalla
 
 ### Ecuaciones generadas
 
@@ -123,7 +153,7 @@ seleccionado.
 
 ---
 
-## Uso didáctico
+## 8. Uso didáctico
 
 Este simulador está pensado para clases de **Geometría Analítica** y **Álgebra**.
 Permite al alumno:
@@ -155,7 +185,7 @@ $$
 
 ---
 
-## Ejemplos incluidos
+## 9. Ejemplos incluidos
 
 Puedes probar estos casos directamente en el simulador:
 
@@ -169,7 +199,7 @@ Puedes probar estos casos directamente en el simulador:
 
 ---
 
-## Tecnologías
+## 10. Tecnologías
 
 - **HTML5**
 - **CSS3** (flexbox, grid, backdrop-filter, transiciones)
@@ -179,11 +209,16 @@ Puedes probar estos casos directamente en el simulador:
 
 ---
 
-## Estructura del proyecto
+## 11. Estructura del repositorio
 
+```
+Graficador_dinamico_parabolas/
+├── README.md                          ← este archivo
+├── LICENSE                            ← texto legal GNU GPL v3
+├── index.html                         ← el simulador
 ---
 
-## Detalles técnicos
+## 12. Detalles técnicos
 
 ### Resolución de la parábola
 
@@ -210,7 +245,21 @@ a partir del vértice y el foco coincida con la capturada. En caso contrario:
 
 ---
 
-## Proyectos relacionados
+## 13. Proyectos relacionados
 
 - [Simulador de Tiro Parabólico](https://jcteacher-lab.github.io/tiroparabolico) —
   Simulador educativo de movimiento de proyectiles con Canvas 2D.
+- [Analizador de parábolas](https://github.com/jcteacher-lab/analizadordeparabolas) —
+  Herramienta didáctica para explorar la parábola: cambia a, h y k con deslizadores y observa cómo se traslada el vértice.
+- [Simulador del sistema solar](https://github.com/jcteacher-lab/sistemasolar/) —
+Simulador interactivo del Sistema Solar en un único archivo HTML. Renderiza planetas y lunas con **órbitas keplerianas reales** (elementos J2000)
+
+## 14. Autor
+
+**MTI. Juan Carlos Santiago Sánchez**
+- GitHub: [@jcteacher-lab](https://github.com/jcteacher-lab)
+- Correo: juancarlos.santiago.cb161@dgeti.sems.gob.mx
+
+---
+
+ Si este proyecto te resultó útil, considera darle una estrella en GitHub.
